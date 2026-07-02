@@ -1,0 +1,843 @@
+{
+    "contacto": {
+        "email": "informeslaboratorio.hu@gmail.com",
+        "telefono": null,
+        "horario_atencion": "7:30 a 9:30 hs de lunes a viernes"
+    },
+    "analisis": [
+        {
+            "id": "cultivo_de_orina",
+            "nombre_oficial": "Cultivo de orina",
+            "alias": [
+                "Urocultivo"
+            ],
+            "palabras_clave": [
+                "orina",
+                "frasco estéril",
+                "bacterias",
+                "infección urinaria",
+                "ITU",
+                "gérmenes en orina"
+            ],
+            "horario_extraccion": "Primera orina de la mañana",
+            "dias_disponibles": null,
+            "tipo_muestra": "Orina (chorro medio)",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "El paciente deberá realizar higiene de los genitales con agua y jabón, enjuagar bien, y recolectar en frasco estéril la primera orina de la mañana desechando la primera porción de la misma.",
+            "indicaciones_especificas": "No se aceptan muestras en bolsita recolectora.",
+            "instrucciones_por_paciente": {
+                "adulto": "Realizar higiene de los genitales con agua y jabón, enjuagar bien, y recolectar en frasco estéril la primera orina de la mañana desechando la primera porción.",
+                "nino": "Realizar higiene previa de los genitales con agua y jabón, enjuagar bien, y recolectar en frasco estéril al acecho. No se aceptan muestras en bolsita recolectora."
+            },
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Frasco estéril. Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "curva_de_glucemia_o_de_insulina",
+            "nombre_oficial": "Curva de glucemia o de insulina",
+            "alias": [
+                "Curva de tolerancia a la glucosa",
+                "PTOG",
+                "Prueba de tolerancia oral a la glucosa"
+            ],
+            "palabras_clave": [
+                "glucosa",
+                "insulina",
+                "ayunas",
+                "sobrecarga",
+                "diabetes",
+                "azúcar en sangre",
+                "tolerancia oral",
+                "PTOG"
+            ],
+            "horario_extraccion": "Lunes a viernes a las 08:00 hs",
+            "dias_disponibles": ["lunes", "martes", "miércoles", "jueves", "viernes"],
+            "tipo_muestra": "Sangre",
+            "ayuno": {
+                "requiere": true,
+                "horas": null,
+                "aclaracion": "Concurrir en ayunas a las 08:00 hs"
+            },
+            "duracion_estudio": "Aproximadamente 2 horas. El paciente debe permanecer en el laboratorio durante todo el estudio.",
+            "indicaciones_generales": "El paciente debe concurrir al Servicio de Análisis Clínicos en ayunas. Durante el estudio debe permanecer en reposo sin realizar actividad física, trabajar o caminar.",
+            "indicaciones_especificas": "Se procesará una muestra inicial para saber si está en condiciones de continuar el estudio. Si es apto, se proveerá glucosa para su ingesta y se realizará una segunda extracción a las dos horas de obtenida la anterior, salvo otra indicación médica.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "alfa_1_antitripsina_materia_fecal",
+            "nombre_oficial": "Alfa 1 Antitripsina (Materia Fecal)",
+            "alias": [
+                "AAT en materia fecal"
+            ],
+            "palabras_clave": [
+                "materia fecal",
+                "antitripsina",
+                "recolección de 3 días",
+                "heces",
+                "proteína en heces"
+            ],
+            "horario_extraccion": "Al finalizar la recolección de 3 días consecutivos",
+            "dias_disponibles": null,
+            "tipo_muestra": "Materia fecal (3 días consecutivos)",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": "3 días consecutivos de recolección en domicilio.",
+            "indicaciones_generales": "La recolección se realiza durante tres días consecutivos. NO tome bario, laxantes, ni se realice enemas 4 días previos a la recolección ni durante la misma. Mantenga la muestra en la heladera o en un lugar fresco durante la recolección. Al finalizar, lleve al laboratorio el recipiente.",
+            "indicaciones_especificas": "El día previo y durante la recolección evite alimentos ricos en fibras. Día 1: realice cada deposición (sin mezclar con orina) en un recipiente limpio y seco, trasvase solo 2 cucharadas a un recipiente plástico tipo briestéril con tapa a rosca (sin conservantes) y descarte el sobrante. Si hace más de una deposición por día, trasvase también 2 cucharadas de cada una al mismo recipiente. Días 2 y 3: repita el procedimiento colocando las cucharadas en el mismo recipiente del día 1.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Recipiente plástico tipo briestéril con tapa a rosca (sin conservantes). Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "acido_vainillin_mandelico",
+            "nombre_oficial": "Ácido Vainillin Mandélico (AVM) / Metanefrinas Urinarias",
+            "alias": [
+                "AVM",
+                "Metanefrinas en orina"
+            ],
+            "palabras_clave": [
+                "orina de 24 horas",
+                "dieta previa",
+                "metanefrinas",
+                "feocromocitoma",
+                "catecolaminas urinarias",
+                "tensión arterial"
+            ],
+            "horario_extraccion": "Al completar las 24 horas de recolección",
+            "dias_disponibles": null,
+            "tipo_muestra": "Orina de 24 horas",
+            "ayuno": {
+                "requiere": false,
+                "horas": null,
+                "aclaracion": "No requiere ayuno pero sí dieta específica de 4 días previos"
+            },
+            "duracion_estudio": "4 días de dieta previa + 1 día completo de recolección de orina.",
+            "indicaciones_generales": "Dieta previa: durante cuatro días no ingerir bananas, tomates, paltas, berenjenas, ananás, ciruelas, maníes, nueces, vainillas, postres, dulces y golosinas que contengan vainilla, chocolates, té ni café. Recolectar desde el cuarto día la orina de 24 horas en un recipiente perfectamente limpio (por ejemplo, un bidón de agua destilada) y remitir al laboratorio.",
+            "indicaciones_especificas": "Forma de recolección: Eliminar la primera orina de la mañana del día de inicio. Juntar en el recipiente todas las demás muestras de orina, incluida la primera del día siguiente. No tirar nada; si el recipiente se llena, seguir en otro. Durante las 24 hs hidratarse bebiendo mínimo un litro de agua entre comidas y mantener el recipiente en lugar fresco (heladera).",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Recipiente grande y limpio para orina de 24 hs (por ejemplo, un bidón de agua destilada vacío)."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "adrenalina_aldosterona_acth",
+            "nombre_oficial": "Adrenalina Plasmática – Aldosterona – ACTH",
+            "alias": [
+                "Catecolaminas plasmáticas",
+                "Adrenocorticotrofina",
+                "ACTH"
+            ],
+            "palabras_clave": [
+                "adrenalina",
+                "aldosterona",
+                "acth",
+                "reposo",
+                "cortisol",
+                "feocromocitoma",
+                "presión arterial",
+                "suprarrenal"
+            ],
+            "horario_extraccion": "08:00 hs",
+            "dias_disponibles": null,
+            "tipo_muestra": "Sangre",
+            "ayuno": {
+                "requiere": true,
+                "horas": null,
+                "aclaracion": "Concurrir en ayunas a las 08:00 hs"
+            },
+            "duracion_estudio": "Aproximadamente 30 minutos en el laboratorio (reposo previo a la extracción).",
+            "indicaciones_generales": "Deberá concurrir al Laboratorio a las 8 hs en ayunas.",
+            "indicaciones_especificas": "Se realizará la toma de muestra luego de permanecer en reposo, acostado o sentado durante 30 minutos.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "analisis_de_rutina",
+            "nombre_oficial": "Análisis de rutina",
+            "alias": [
+                "Laboratorio general",
+                "Chequeo de rutina",
+                "Análisis completo de sangre"
+            ],
+            "palabras_clave": [
+                "ayuno",
+                "orina completa",
+                "rutina",
+                "hemograma",
+                "glucemia",
+                "colesterol",
+                "análisis completo",
+                "sangre",
+                "chequeo",
+                "triglicéridos",
+                "urea"
+            ],
+            "horario_extraccion": "A confirmar por el laboratorio",
+            "dias_disponibles": null,
+            "tipo_muestra": "Sangre y Orina (según prescripción)",
+            "ayuno": {
+                "requiere": true,
+                "horas": 12,
+                "aclaracion": "Se permite té con galletas de agua a las 20:00 hs del día anterior"
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Ayuno de 12 horas. Se permite té con galletas de agua a las 20:00 hs del día anterior.",
+            "indicaciones_especificas": "Si la prescripción solicita orina completa, recolectar en recipiente estéril la primera orina de la mañana, descartando el primer chorro.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "clearance_de_creatinina",
+            "nombre_oficial": "Clearance de creatinina",
+            "alias": [
+                "Aclaramiento de creatinina",
+                "Depuración de creatinina"
+            ],
+            "palabras_clave": [
+                "creatinina",
+                "orina de 24 horas",
+                "función renal",
+                "peso y talla",
+                "riñón",
+                "filtrado glomerular",
+                "TFG"
+            ],
+            "horario_extraccion": "Al finalizar la recolección de 24 hs, concurrir al laboratorio en ayunas",
+            "dias_disponibles": null,
+            "tipo_muestra": "Orina de 24 horas y Sangre",
+            "ayuno": {
+                "requiere": true,
+                "horas": null,
+                "aclaracion": "Concurrir en ayunas al laboratorio al momento de entregar la muestra de 24 hs"
+            },
+            "duracion_estudio": "1 día completo de recolección de orina en domicilio, más extracción de sangre al finalizar.",
+            "indicaciones_generales": "Recolectar orina de 24 hs en un recipiente perfectamente limpio (por ejemplo, un bidón de agua destilada). Eliminar la primera orina de la mañana. Juntar todas las demás muestras, incluida la primera del día siguiente, sin tirar nada (si se completa el recipiente, usar otro). Hidratarse con mínimo un litro de agua entre comidas y mantener la muestra en heladera o lugar fresco. Luego de juntar la orina, concurrir al laboratorio en ayunas con la muestra.",
+            "indicaciones_especificas": "En el laboratorio se le realizará una extracción de sangre. El día que remita la muestra se le solicitarán datos de edad, peso y talla para evaluar la función renal.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Recipiente grande y limpio para orina de 24 hs (por ejemplo, un bidón de agua destilada vacío)."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "coprocultivo",
+            "nombre_oficial": "Coprocultivo",
+            "alias": [
+                "Cultivo de materia fecal",
+                "Adenovirus, rotavirus, leucocitos en materia fecal",
+                "Fresco en materia fecal"
+            ],
+            "palabras_clave": [
+                "materia fecal",
+                "copro",
+                "virus",
+                "bacterias",
+                "diarrea",
+                "infección intestinal",
+                "heces"
+            ],
+            "horario_extraccion": "Luego de la recolección de la muestra",
+            "dias_disponibles": null,
+            "tipo_muestra": "Materia fecal",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Recolectar materia fecal en un frasco estéril seco, sin conservantes líquidos.",
+            "indicaciones_especificas": "No se aceptan pañales para niños que no controlan esfínteres.",
+            "instrucciones_por_paciente": {
+                "adulto": "Recolectar materia fecal en un frasco estéril seco, sin conservantes líquidos.",
+                "nino_sin_control_de_esfinteres": "No se aceptan pañales. Recolectar la muestra al acecho o, de no ser posible, pasar la materia fecal del pañal inmediatamente luego de ser emitida a un frasco estéril."
+            },
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Frasco estéril seco, sin conservantes líquidos. Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "dopamina",
+            "nombre_oficial": "Dopamina",
+            "alias": [
+                "Catecolaminas plasmáticas"
+            ],
+            "palabras_clave": [
+                "dopamina",
+                "ayuno",
+                "dieta previa",
+                "reposo",
+                "catecolaminas urinarias",
+                "feocromocitoma",
+                "neurológico"
+            ],
+            "horario_extraccion": "A confirmar por el laboratorio",
+            "dias_disponibles": null,
+            "tipo_muestra": "Sangre",
+            "ayuno": {
+                "requiere": true,
+                "horas": 8
+            },
+            "duracion_estudio": "Aproximadamente 30 minutos en el laboratorio (reposo previo en posición acostada).",
+            "indicaciones_generales": "Ayuno de 8 horas. Durante los 3 días previos no ingerir banana, tomate, chocolate, cacao, cremas, tortas, helados o alimentos con vainilla. No ingerir aspirinas. Beber solamente agua. Evitar té, café y mate el día anterior. No realizar grandes ingestas ni fumar la noche anterior. Evitar el estrés, el ejercicio y el dolor.",
+            "indicaciones_especificas": "Suspender durante 10 días la toma de la siguiente medicación (previa consulta médica): gotas nasales, antihistamínicos, broncodilatadores, supresores del apetito, nitroglicerina, nitroprusiato de sodio, teofilina, alfa2-simpaticomiméticos, antagonistas del calcio, inhibidores de la ECA, alfa metil dopa, inhibidores de la MAO, fenotiazinas, antidepresivos tricíclicos, L-dopa y bloqueantes adrenérgicos alfa y beta. Toma de muestra con el paciente en posición supina (acostado) durante 20 a 30 minutos.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "esputo",
+            "nombre_oficial": "Esputo",
+            "alias": [
+                "Baciloscopía común",
+                "Baciloscopía seriada",
+                "Cultivo de Koch",
+                "Cultivo de esputo",
+                "BAAR"
+            ],
+            "palabras_clave": [
+                "esputo",
+                "expectoración",
+                "bacteriología",
+                "pulmonar",
+                "tuberculosis",
+                "TBC",
+                "tos",
+                "respiratorio",
+                "BAAR",
+                "baciloscopia"
+            ],
+            "horario_extraccion": "Al momento de la expectoración",
+            "dias_disponibles": null,
+            "tipo_muestra": "Esputo (expectoración)",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Efectuar higiene de la cavidad bucal y fauces antes de la expectoración: lavado prolijo de dientes, enjuague con dilución de agua oxigenada (una cucharada en un vaso de agua hervida) y luego enjuague con abundante agua hervida pura para eliminar restos. Expectorar recogiendo el material directamente en recipiente estéril y remitir al Servicio de Bacteriología.",
+            "indicaciones_especificas": "En el caso de baciloscopía seriada, recolectar de la misma manera 3 días diferentes en frascos distintos y remitirlas el mismo día.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Recipiente estéril para esputo. Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "examen_fisico_quimico_materia_fecal",
+            "nombre_oficial": "Examen físico-químico de materia fecal",
+            "alias": [
+                "Físico-químico de heces"
+            ],
+            "palabras_clave": [
+                "materia fecal",
+                "dieta mixta",
+                "heces",
+                "digestión",
+                "coprológico"
+            ],
+            "horario_extraccion": "Al cuarto día, luego de la recolección",
+            "dias_disponibles": null,
+            "tipo_muestra": "Materia fecal",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": "3 días de dieta previa + recolección al cuarto día.",
+            "indicaciones_generales": "Durante tres días el paciente debe ingerir una dieta mixta (hidratos de carbono, grasas, fibras musculares; es decir: carnes, frutas, verduras y harinas). Recoger al cuarto día una porción con cuchara o espátula descartable en recipiente estéril sin conservantes. Conservar en lugar fresco y remitir lo antes posible (de preferencia dentro de las 24 horas).",
+            "indicaciones_especificas": "Se puede realizar sin dieta previa en bebés (separar rápidamente del pañal) y en presencia de diarrea absoluta importante.",
+            "instrucciones_por_paciente": {
+                "adulto": "Durante tres días seguir dieta mixta (carnes, frutas, verduras y harinas). Al cuarto día recolectar una porción en recipiente estéril sin conservantes y remitir dentro de las 24 horas.",
+                "bebe": "Se puede realizar sin dieta previa. Separar la muestra del pañal rápidamente y colocar en recipiente estéril."
+            },
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Recipiente estéril sin conservantes. Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "flujo_vaginal",
+            "nombre_oficial": "Flujo vaginal",
+            "alias": [
+                "Cultivo de flujo vaginal",
+                "Exudado vaginal"
+            ],
+            "palabras_clave": [
+                "gérmenes comunes",
+                "micoplasma",
+                "ureaplasma",
+                "clamidia",
+                "infección vaginal",
+                "secreción vaginal",
+                "vaginosis",
+                "flujo"
+            ],
+            "horario_extraccion": "A confirmar por el laboratorio",
+            "dias_disponibles": null,
+            "tipo_muestra": "Exudado vaginal",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "La paciente deberá mantener abstinencia sexual durante las 48 horas previas al estudio y suspender medicación por vía vaginal (óvulos, cremas). Debe venir sin menstruación.",
+            "indicaciones_especificas": "Realizar higiene de los genitales externos con agua y jabón 12 horas antes del estudio.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "hormonas_tiroideas",
+            "nombre_oficial": "Hormonas tiroideas",
+            "alias": [
+                "Perfil tiroideo"
+            ],
+            "palabras_clave": [
+                "tsh",
+                "t4",
+                "t3",
+                "tiroides",
+                "hipotiroidismo",
+                "hipertiroidismo",
+                "nódulo tiroideo",
+                "levotiroxina"
+            ],
+            "horario_extraccion": "A confirmar por el laboratorio",
+            "dias_disponibles": null,
+            "tipo_muestra": "Sangre",
+            "ayuno": {
+                "requiere": true,
+                "horas": 8
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Ayuno de 8 horas.",
+            "indicaciones_especificas": "Se sugiere, aunque no es imprescindible, no tomar la medicación del día para la toma de muestra.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "hormonas_generales",
+            "nombre_oficial": "Hormonas (FSH, LH, Estradiol, Prolactina, Testosterona, Testosterona Libre, Androstenediona, DHEA, DHEA-S)",
+            "alias": [
+                "Perfil hormonal",
+                "Hormonas sexuales"
+            ],
+            "palabras_clave": [
+                "fsh",
+                "lh",
+                "estradiol",
+                "prolactina",
+                "ciclo menstrual",
+                "testosterona",
+                "dhea",
+                "andrógenos",
+                "fertilidad",
+                "menopausia"
+            ],
+            "horario_extraccion": "Lunes a viernes de 08:00 hs a 09:00 hs",
+            "dias_disponibles": ["lunes", "martes", "miércoles", "jueves", "viernes"],
+            "tipo_muestra": "Sangre",
+            "ayuno": {
+                "requiere": true,
+                "horas": 8
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Concurrir al Servicio de Laboratorio de lunes a viernes de 08:00 hs a 09:00 hs con ayuno de 8 horas, tanto para hombres como para mujeres.",
+            "indicaciones_especificas": "Recomendación especial para PROLACTINA: Toma entre las 8:00 y 9:00 hs con vigilia previa de 2 horas (a las 2 horas de despertar con sueño regular), permanecer 30 minutos en reposo antes de la extracción y evitar situaciones de estrés.",
+            "instrucciones_por_paciente": {
+                "mujer_con_ciclo": "Si tiene ciclos menstruales, concurrir al 5° día del mismo. Si ese día es no laboral, puede concurrir el 3° o 4° día.",
+                "mujer_sin_ciclo": "Si no tiene ciclos menstruales, concurrir cualquier día de lunes a viernes.",
+                "hombre": "Concurrir cualquier día de lunes a viernes de 08:00 hs a 09:00 hs con ayuno de 8 horas."
+            },
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "progesterona",
+            "nombre_oficial": "Progesterona",
+            "alias": [
+                "Progesterona plasmática"
+            ],
+            "palabras_clave": [
+                "progesterona",
+                "fase lútea",
+                "ayuno",
+                "ciclo menstrual",
+                "embarazo",
+                "fertilidad"
+            ],
+            "horario_extraccion": "Lunes a viernes de 08:00 hs a 09:00 hs",
+            "dias_disponibles": ["lunes", "martes", "miércoles", "jueves", "viernes"],
+            "tipo_muestra": "Sangre",
+            "ayuno": {
+                "requiere": true,
+                "horas": 8
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Concurrir al Servicio de Laboratorio de lunes a viernes de 08:00 hs a 09:00 hs con ayuno de 8 horas, tanto para hombres como para mujeres.",
+            "indicaciones_especificas": null,
+            "instrucciones_por_paciente": {
+                "mujer_con_ciclo": "Si tiene ciclos menstruales, concurrir el día 21 del mismo. Si ese día es no laboral, puede concurrir el día 22 o 23 según corresponda.",
+                "mujer_sin_ciclo": "Si no tiene ciclos menstruales, concurrir cualquier día de lunes a viernes de 08:00 hs a 09:00 hs.",
+                "hombre": "Concurrir cualquier día de lunes a viernes de 08:00 hs a 09:00 hs con ayuno de 8 horas."
+            },
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "iga_secretora",
+            "nombre_oficial": "IgA Secretora",
+            "alias": [
+                "Inmunoglobulina A secretora en saliva"
+            ],
+            "palabras_clave": [
+                "saliva",
+                "iga",
+                "inmunidad",
+                "inmunoglobulina",
+                "defensas"
+            ],
+            "horario_extraccion": "De lunes a viernes de 08:00 a 09:00 horas",
+            "dias_disponibles": ["lunes", "martes", "miércoles", "jueves", "viernes"],
+            "tipo_muestra": "Saliva",
+            "ayuno": {
+                "requiere": true,
+                "horas": null,
+                "aclaracion": "En ayunas y sin realizar higiene bucal al momento de la recolección"
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Al momento de la recolección, los labios y la boca deben estar libres de cualquier cosmético o medicamento en crema. Remitir o concurrir de lunes a viernes de 08:00 a 09:00 horas.",
+            "indicaciones_especificas": null,
+            "instrucciones_por_paciente": {
+                "adulto_y_nino_mayor_10": "A primera hora de la mañana, en ayunas y sin realizar higiene bucal, recolectar saliva (no material de expectoración) en un frasco estéril y remitir de lunes a viernes de 08:00 a 09:00 hs.",
+                "nino_hasta_10": "Concurrir en ayunas al laboratorio de lunes a viernes de 08:00 a 09:00 hs para la toma de muestra de saliva directamente en el laboratorio."
+            },
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Frasco estéril para saliva (para adultos y niños mayores de 10 años). Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "micologico_directo_y_cultivo",
+            "nombre_oficial": "Micológico directo y cultivo",
+            "alias": [
+                "Cultivo de hongos",
+                "Examen micológico"
+            ],
+            "palabras_clave": [
+                "hongos",
+                "piel",
+                "uñas",
+                "antimicóticos",
+                "candidiasis",
+                "tiña",
+                "micosis",
+                "pie de atleta",
+                "onicomicosis"
+            ],
+            "horario_extraccion": "A confirmar por el laboratorio",
+            "dias_disponibles": null,
+            "tipo_muestra": "Escamas de piel, pelos o fragmentos de uñas (según corresponda)",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Durante 7 días no colocarse cremas, soluciones, aerosoles antimicóticos, cremas humectantes, talco o desinfectantes.",
+            "indicaciones_especificas": null,
+            "instrucciones_por_paciente": {
+                "piel_y_cuero_cabelludo": "Concurrir con higiene reciente (agua y jabón blanco) y enjuagar.",
+                "unas": "3 días antes de concurrir, cepillar las uñas 3 veces por día con agua y jabón. Una hora previa a la toma de muestra, sumergir las uñas afectadas en agua con sal por 10 minutos. Si el estudio es en piel o uñas de pies, colocar medias de algodón para concurrir al laboratorio."
+            },
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "curva_de_lactosa",
+            "nombre_oficial": "Curva de lactosa",
+            "alias": [
+                "Test de tolerancia a la lactosa"
+            ],
+            "palabras_clave": [
+                "lactosa",
+                "sobrecarga",
+                "intolerancia",
+                "curva",
+                "intolerancia a la lactosa",
+                "leche",
+                "digestión"
+            ],
+            "horario_extraccion": "Lunes a viernes a las 08:00 hs (inicio del estudio)",
+            "dias_disponibles": ["lunes", "martes", "miércoles", "jueves", "viernes"],
+            "tipo_muestra": "Sangre (múltiples extracciones)",
+            "ayuno": {
+                "requiere": true,
+                "horas": null,
+                "aclaracion": "Concurrir en ayunas a las 08:00 hs"
+            },
+            "duracion_estudio": "Aproximadamente 2 horas. El paciente debe permanecer en el laboratorio durante todo el estudio.",
+            "indicaciones_generales": "El paciente debe concurrir en ayunas de lunes a viernes a las 08:00 hs. El estudio demora aproximadamente 2 horas.",
+            "indicaciones_especificas": "Consiste en realizar una extracción basal; posteriormente el Servicio suministrará lactosa para su ingesta y se continuará con tres extracciones más a los 30 minutos, 60 minutos y 120 minutos, salvo otra indicación médica.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": false,
+                "descripcion": null
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "deoxipiridolina",
+            "nombre_oficial": "Deoxipiridolina",
+            "alias": [
+                "DPD",
+                "Marcadores de reabsorción ósea"
+            ],
+            "palabras_clave": [
+                "orina",
+                "ritmo circadiano",
+                "deoxipiridolina",
+                "osteoporosis",
+                "densidad ósea",
+                "hueso",
+                "reabsorción ósea"
+            ],
+            "horario_extraccion": "A las 10:00 hs PUNTUALMENTE (segunda micción de la mañana)",
+            "dias_disponibles": null,
+            "tipo_muestra": "Orina (segunda micción de la mañana)",
+            "ayuno": {
+                "requiere": true,
+                "horas": null,
+                "aclaracion": "En ayunas a las 08:00 hs realizar la primera micción (sin recolectar). La recolección es a las 10:00 hs."
+            },
+            "duracion_estudio": "Aproximadamente 2 horas en domicilio (de 08:00 a 10:00 hs).",
+            "indicaciones_generales": "Higienizarse bien con agua y jabón y enjuagar con abundante agua antes de recolectar. Remitir la muestra dentro de las 2 horas de finalizada la recolección. No se deben recolectar muestras después de las 10:00 hs debido a las variaciones del ritmo circadiano.",
+            "indicaciones_especificas": "En ayunas, a las 08:00 hs puntualmente orinar en el inodoro (NO RECOLECTAR). Inmediatamente después, tomar 2 vasos de agua. A las 10:00 hs puntualmente orinar y recolectar todo el volumen en un recipiente. Si no puede retener las 2 horas, orinar y recolectar a las 9:00 hs y recolectar nuevamente a las 10:00 hs.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Recipiente limpio para orina. Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "orina_de_24_horas",
+            "nombre_oficial": "Orina de 24 horas",
+            "alias": [
+                "Recolección de orina de 24 hs"
+            ],
+            "palabras_clave": [
+                "orina",
+                "24 horas",
+                "bidón",
+                "conservación",
+                "recolección domiciliaria",
+                "riñón"
+            ],
+            "horario_extraccion": "Al completar las 24 horas de recolección",
+            "dias_disponibles": null,
+            "tipo_muestra": "Orina de 24 horas",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": "1 día completo de recolección en domicilio.",
+            "indicaciones_generales": "Recolectar la orina de 24 hs en un recipiente perfectamente limpio (por ejemplo, un bidón de agua destilada). Durante las 24 hs de recolección, hidratarse bebiendo como mínimo un litro de agua entre las comidas. Mantener el recipiente que contiene la muestra en un lugar fresco (preferentemente en heladera).",
+            "indicaciones_especificas": "Forma de recolección: Eliminar la primera orina de la mañana del día de inicio. Juntar en el recipiente todas las demás muestras de orina posteriores, incluida la primera del día siguiente. No tirar nada; si el recipiente se completa, seguir recolectando en otro. Al finalizar, remitir de inmediato al laboratorio.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Recipiente grande y limpio para orina de 24 hs (por ejemplo, un bidón de agua destilada vacío)."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "parasitologico_de_materia_fecal",
+            "nombre_oficial": "Parasitológico de materia fecal",
+            "alias": [
+                "Examen parasitológico de heces",
+                "Copraparasitológico"
+            ],
+            "palabras_clave": [
+                "materia fecal",
+                "parásitos",
+                "líquido conservante",
+                "7 días",
+                "heces",
+                "giardia",
+                "parásitos intestinales"
+            ],
+            "horario_extraccion": "De lunes a viernes (entrega de la muestra al finalizar los 7 días)",
+            "dias_disponibles": ["lunes", "martes", "miércoles", "jueves", "viernes"],
+            "tipo_muestra": "Materia fecal (recolectada durante 7 días)",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": "7 días de recolección en domicilio.",
+            "indicaciones_generales": "Se debe comprar en la farmacia un recipiente especial para este estudio, el cual contiene un líquido conservante. La recolección se realiza en un total de 7 días. Precaución: No mezclar la materia fecal con orina en ningún momento. Remitir al Servicio de Análisis Clínicos de lunes a viernes.",
+            "indicaciones_especificas": "Si la evacuación del intestino es regular (diaria): Colocar materia fecal en el recipiente con el líquido (2 cucharadas cada vez) día por medio. Si la evacuación NO fuera regular: Ingerir abundante líquido y jugo de frutas, y recolectar 3 muestras de días diferentes.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Frasco especial con líquido conservante. Debe comprarse en farmacia ANTES de iniciar la recolección."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "secrecion_uretral",
+            "nombre_oficial": "Secreción uretral",
+            "alias": [
+                "Exudado uretral",
+                "Micoplasma, Ureaplasma y Clamidia en orina"
+            ],
+            "palabras_clave": [
+                "uretra",
+                "primer chorro",
+                "secreción",
+                "bacteriología",
+                "micoplasma",
+                "ureaplasma",
+                "clamidia",
+                "ETS",
+                "infección uretral"
+            ],
+            "horario_extraccion": "Por la mañana",
+            "dias_disponibles": null,
+            "tipo_muestra": "Secreción uretral o Primer chorro miccional",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": null,
+            "indicaciones_generales": "Estudio orientado a la búsqueda de Micoplasma, Ureaplasma y Clamidia. Remitir la muestra obtenida al Servicio de Laboratorio.",
+            "indicaciones_especificas": null,
+            "instrucciones_por_paciente": {
+                "con_secrecion_uretral": "Si el paciente tiene secreción uretral a la mañana: Concurrir sin previa higiene al Servicio de Bacteriología para la toma de la muestra.",
+                "sin_secrecion_uretral": "Si NO presenta secreción: Recolectar de la primera orina de la mañana el primer chorro (aproximadamente 2 cm) en un frasco estéril, descartando el resto de la micción."
+            },
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Frasco estéril (solo si no presenta secreción). Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "test_de_graham",
+            "nombre_oficial": "Test de Graham",
+            "alias": [
+                "Estratificación para oxiuros",
+                "Cinta scotch test"
+            ],
+            "palabras_clave": [
+                "oxiuros",
+                "gasas",
+                "zona anal",
+                "7 días",
+                "lombrices",
+                "parásitos anales",
+                "enterobius"
+            ],
+            "horario_extraccion": "Por la mañana al levantarse (durante 7 días consecutivos)",
+            "dias_disponibles": null,
+            "tipo_muestra": "Muestras seriadas en gasas (7 días)",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": "7 días de recolección en domicilio.",
+            "indicaciones_generales": "Para este estudio el laboratorio entrega un frasco con conservador y gasas. La recolección se realiza durante 7 días consecutivos. Todas las mañanas, al levantarse y sin realizar ninguna higiene previa, humedecer una gasa con agua corriente, pasarla por la zona anal varias veces y colocarla en el recipiente entregado. Al terminar los 7 días, remitir al Servicio de Análisis Clínicos.",
+            "indicaciones_especificas": "Precauciones importantes: No colocar talco ni cremas en la zona anal la noche anterior a la toma de la muestra. Lavarse muy bien las manos con agua y jabón inmediatamente después de efectuar la recolección de las gasas.",
+            "instrucciones_por_paciente": null,
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Frasco con conservador y gasas entregado por el laboratorio. Retirar del laboratorio ANTES de iniciar la recolección."
+            },
+            "tiempo_entrega": null
+        },
+        {
+            "id": "van_de_kamer",
+            "nombre_oficial": "Van de Kamer",
+            "alias": [
+                "Cuantificación de grasa en materia fecal",
+                "Balance de grasas"
+            ],
+            "palabras_clave": [
+                "grasa en heces",
+                "sobrecarga de manteca",
+                "dieta de 6 días",
+                "recolección de 3 días",
+                "malabsorción",
+                "esteatorrea"
+            ],
+            "horario_extraccion": "A partir del cuarto día de dieta (recolección días 4, 5 y 6)",
+            "dias_disponibles": null,
+            "tipo_muestra": "Materia fecal completa (días 4, 5 y 6)",
+            "ayuno": {
+                "requiere": false,
+                "horas": null
+            },
+            "duracion_estudio": "6 días totales: 3 días de dieta y luego 3 días de recolección simultánea con dieta.",
+            "indicaciones_generales": "El estudio requiere una dieta específica durante 6 días. A partir del cuarto día y hasta el sexto inclusive (3 días en total) se deben recolectar todas las materias fecales sin descartar ninguna. Colocar las deposiciones en un frasco limpio de boca ancha, sin conservantes y sin mezclar con orina. Mantener el recipiente en la heladera durante todo el proceso.",
+            "indicaciones_especificas": "NO debe comer lechuga, acelga, espinaca o similares durante los 6 días.",
+            "instrucciones_por_paciente": {
+                "nino_2_a_12_anios": "Debe comer durante los 6 días un total de 30 a 50 gramos de manteca por día, distribuidos en las comidas.",
+                "adulto": "Debe comer de manera habitual, agregando cada día (durante los 6 días): tres cucharadas de aceite, una cucharada de manteca, un trozo de queso mantecoso o queso doble crema y 2 fetas de jamón con grasa."
+            },
+            "requiere_insumo_externo": {
+                "requiere": true,
+                "descripcion": "Frasco limpio de boca ancha, sin conservantes. Consultar con el laboratorio dónde obtenerlo."
+            },
+            "tiempo_entrega": null
+        }
+    ]
+}
