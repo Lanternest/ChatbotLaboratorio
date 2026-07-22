@@ -1,7 +1,5 @@
 <?php
 
-// Agregar este bloque dentro del array return de config/services.php
-
 return [
 
     // ... (configuraciones existentes de Laravel)
