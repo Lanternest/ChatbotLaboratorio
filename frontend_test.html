@@ -206,11 +206,48 @@
         #file-input {
             display: none;
         }
+        .preview-container {
+            display: none;
+            position: relative;
+            margin: 0 15px 10px 15px;
+            width: fit-content;
+        }
         .image-preview {
+            max-height: 100px;
             max-width: 100%;
             border-radius: 8px;
-            margin-top: 5px;
-            display: none;
+            display: block;
+        }
+        .remove-image-btn {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding-bottom: 2px; /* optical alignment */
+        }
+        
+        @media (max-width: 768px) {
+            .chat-container {
+                width: 100%;
+                height: 100vh;
+                max-height: 100vh;
+                border-radius: 0;
+            }
+            body {
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
@@ -244,13 +281,17 @@
 
     <div class="chat-footer">
         <div class="input-group">
-            <input type="file" id="file-input" accept="image/*">
-            <button class="icon-btn" onclick="document.getElementById('file-input').click()">📎</button>
+            <input type="file" id="file-input" accept="image/*,application/pdf">
+            <button class="icon-btn" onclick="document.getElementById('file-input').click()" title="Adjuntar archivo o tomar foto">📎</button>
             <input type="text" id="chat-input" placeholder="Escribe tu consulta...">
         </div>
         <button class="send-btn" id="send-btn">➔</button>
     </div>
-    <img id="image-preview" class="image-preview" style="display:none; max-height: 100px; margin: 0 15px 10px 15px; border-radius: 8px;">
+    
+    <div id="preview-container" class="preview-container">
+        <button class="remove-image-btn" onclick="removeSelectedImage()" title="Quitar imagen">✕</button>
+        <img id="image-preview" class="image-preview">
+    </div>
     
     <div class="disclaimer">
         No reemplaza la atención médica. Emergencias: llame al 107.
@@ -267,6 +308,7 @@
     const sendBtn = document.getElementById('send-btn');
     const fileInput = document.getElementById('file-input');
     const imagePreview = document.getElementById('image-preview');
+    const previewContainer = document.getElementById('preview-container');
 
     input.addEventListener('input', () => {
         if(input.value.trim().length > 0 || selectedFile) {
@@ -276,18 +318,30 @@
         }
     });
 
-    fileInput.addEventListener('change', (e) => {
+    function handleFileSelection(e) {
         if(e.target.files && e.target.files[0]) {
             selectedFile = e.target.files[0];
             const reader = new FileReader();
             reader.onload = function(e) {
                 imagePreview.src = e.target.result;
-                imagePreview.style.display = 'block';
+                previewContainer.style.display = 'block';
             }
             reader.readAsDataURL(selectedFile);
             sendBtn.classList.add('active');
         }
-    });
+    }
+
+    function removeSelectedImage() {
+        selectedFile = null;
+        fileInput.value = '';
+        imagePreview.src = '';
+        previewContainer.style.display = 'none';
+        if(input.value.trim().length === 0) {
+            sendBtn.classList.remove('active');
+        }
+    }
+
+    fileInput.addEventListener('change', handleFileSelection);
 
     input.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
@@ -352,7 +406,8 @@
         // Limpiar inputs
         input.value = '';
         selectedFile = null;
-        imagePreview.style.display = 'none';
+        fileInput.value = '';
+        previewContainer.style.display = 'none';
         imagePreview.src = '';
         sendBtn.classList.remove('active');
         
@@ -367,7 +422,7 @@
         chatBody.scrollTop = chatBody.scrollHeight;
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/chat', {
+            const response = await fetch('/api/chat', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json'
@@ -439,7 +494,7 @@
             formData.append('resumen', window.resumenPendiente);
             formData.append('analisis_nombre', analisisIdentificados.join(', ') || 'Análisis clínico');
             
-            const response = await fetch('http://127.0.0.1:8000/api/send-email', {
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json'
