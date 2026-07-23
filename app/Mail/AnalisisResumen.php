@@ -13,8 +13,8 @@ class AnalisisResumen extends Mailable
     use Queueable, SerializesModels;
 
     public function __construct(
-        public readonly string $resumen,
-        public readonly string $analisisNombre
+        public string $resumen,
+        public string $analisisNombre
     ) {}
 
     public function envelope(): Envelope

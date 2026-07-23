@@ -2,26 +2,23 @@
 
 namespace App\Services;
 
-use Illuminate\Support\Facades\Http;
-
 class IdentifierService
 {
-    private const ANTHROPIC_URL = 'https://api.anthropic.com/v1/messages';
-    private const MODEL          = 'claude-sonnet-4-6';
-
     private string $promptTemplate = <<<'PROMPT'
-Eres un asistente de identificación de análisis clínicos del laboratorio del Hospital Universitario UNCuyo.
+Eres un asistente experto del laboratorio del Hospital Universitario UNCuyo, especializado en leer y descifrar órdenes médicas.
 
-Tu única tarea es determinar a qué análisis se refiere el paciente, basándote EXCLUSIVAMENTE en el catálogo que se te proporciona a continuación.
+Tu única tarea es determinar qué análisis de laboratorio se requieren, basándote EXCLUSIVAMENTE en el catálogo y en el mensaje o la imagen de la orden médica del paciente.
 
 CATÁLOGO DE ANÁLISIS DISPONIBLES:
 {catalogo}
 
-INSTRUCCIONES:
-- Analiza el mensaje del paciente y el historial de la conversación.
-- Si podés identificar con certeza el análisis, responde ÚNICAMENTE con el ID exacto del análisis (por ejemplo: cultivo_de_orina).
-- Si NO podés identificar el análisis con certeza, responde ÚNICAMENTE con la palabra: null
-- No des explicaciones. No saludes. No hagas preguntas. Solo devuelve el ID o null.
+INSTRUCCIONES CRÍTICAS:
+- Analiza el texto o la imagen proporcionada. Presta atención a la escritura cursiva o abreviaturas médicas comunes.
+- Identifica TODOS los análisis que el médico está solicitando.
+- Responde ÚNICAMENTE con un arreglo (array) en formato JSON puro que contenga los IDs exactos del catálogo. Ejemplo: ["cultivo_de_orina", "curva_de_glucemia_o_de_insulina"].
+- Si identificas solo uno, devuelve un arreglo con un elemento: ["hemograma_completo"].
+- Si NO puedes identificar ningún análisis, responde ÚNICAMENTE con un arreglo vacío: []
+- No incluyas explicaciones, saludos, ni texto adicional fuera del arreglo JSON.
 - Nunca inventes IDs que no estén en el catálogo.
 
 Historial de conversación:
@@ -29,16 +26,16 @@ Historial de conversación:
 
 Último mensaje del paciente: {mensaje}
 
-Responde solo con el ID del análisis o null:
+Responde solo con el JSON (Array):
 PROMPT;
 
     public function __construct(private KnowledgeService $knowledge) {}
 
     /**
-     * Intenta identificar el análisis clínico mencionado por el paciente.
-     * Devuelve el id del análisis o null si no pudo identificarlo.
+     * Intenta identificar los análisis clínicos mencionados por el paciente o en la foto.
+     * Devuelve un arreglo con los IDs de los análisis, o un arreglo vacío si no pudo.
      */
-    public function identificar(string $mensaje, array $historial): ?string
+    public function identificar(string $mensaje, array $historial, ?string $imagenBase64 = null, ?string $mimeType = null): array
     {
         $catalogo = $this->knowledge->catalogoParaIdentificacion();
 
@@ -55,20 +52,15 @@ PROMPT;
             $this->promptTemplate
         );
 
-        $response = Http::withHeaders([
-            'x-api-key'         => config('services.anthropic.api_key'),
-            'anthropic-version' => '2023-06-01',
-            'content-type'      => 'application/json',
-        ])->post(self::ANTHROPIC_URL, [
-            'model'      => self::MODEL,
-            'max_tokens' => 50,
-            'messages'   => [['role' => 'user', 'content' => $prompt]],
-        ]);
+        $llm = LlmProviderFactory::make();
+        $resultado = $llm->identificarAnalisis($prompt, $imagenBase64, $mimeType);
 
-        $resultado = strtolower(trim(
-            $response->json('content.0.text', 'null')
-        ));
+        // Intentar parsear el JSON de la respuesta
+        // Limpiar backticks o texto extra que a veces las IA añaden (ej. ```json ... ```)
+        $resultadoLimpio = trim(str_replace(['```json', '```'], '', $resultado));
 
-        return ($resultado === 'null' || empty($resultado)) ? null : $resultado;
+        $ids = json_decode($resultadoLimpio, associative: true);
+
+        return is_array($ids) ? $ids : [];
     }
 }

@@ -1,0 +1,952 @@
+[2026-07-22 23:19:39] production.ERROR: syntax error, unexpected token "=>" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"=>\" at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\config\\services.php:35)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(265): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2026-07-22 21:20:25] local.ERROR: require(C:\Users\salom\OneDrive\Escritorio\ChatBotLaboratorio\routes/web.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): require(C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\routes/web.php): Failed to open stream: No such file or directory at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php:35)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(270): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'require(C:\\\\User...', 'C:\\\\Users\\\\salom\\\\...', 35)
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'require(C:\\\\User...', 'C:\\\\Users\\\\salom\\\\...', 35)
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require()
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(503): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\salom\\\\...')
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(457): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\salom\\\\...')
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(192): Illuminate\\Routing\\Router->group(Array, 'C:\\\\Users\\\\salom\\\\...')
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Providers\\RouteServiceProvider.php(48): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\Users\\\\salom\\\\...')
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(957): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(935): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#22 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(936): array_walk(Array, Object(Closure))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(265): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+"} 
+[2026-07-22 21:21:02] local.ERROR: require(C:\Users\salom\OneDrive\Escritorio\ChatBotLaboratorio\routes/console.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): require(C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\routes/console.php): Failed to open stream: No such file or directory at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Console\\Kernel.php:30)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(270): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'require(C:\\\\User...', 'C:\\\\Users\\\\salom\\\\...', 30)
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Console\\Kernel.php(30): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'require(C:\\\\User...', 'C:\\\\Users\\\\salom\\\\...', 30)
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Console\\Kernel.php(30): require()
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(389): App\\Console\\Kernel->commands()
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2026-07-22 21:29:18] local.ERROR: file_put_contents(C:\Users\salom\OneDrive\Escritorio\ChatBotLaboratorio\storage\framework/sessions/0Zf59jVlAGNAR9i9PwwM3YaBCd0zjwjfk2XhDzpm): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\storage\\framework/sessions/0Zf59jVlAGNAR9i9PwwM3YaBCd0zjwjfk2XhDzpm): Failed to open stream: No such file or directory at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:190)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(270): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_put_conten...', 'C:\\\\Users\\\\salom\\\\...', 190)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'file_put_conten...', 'C:\\\\Users\\\\salom\\\\...', 190)
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(190): file_put_contents('C:\\\\Users\\\\salom\\\\...', 'a:3:{s:6:\"_toke...', 2)
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\FileSessionHandler.php(90): Illuminate\\Filesystem\\Filesystem->put('C:\\\\Users\\\\salom\\\\...', 'a:3:{s:6:\"_toke...', true)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(173): Illuminate\\Session\\FileSessionHandler->write('0Zf59jVlAGNAR9i...', 'a:3:{s:6:\"_toke...')
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(238): Illuminate\\Session\\Store->save()
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(130): Illuminate\\Session\\Middleware\\StartSession->saveSession(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#39 {main}
+"} 
+[2026-07-22 21:30:06] local.ERROR: file_put_contents(C:\Users\salom\OneDrive\Escritorio\ChatBotLaboratorio\storage\framework/sessions/VQBPQeyUYe0hcPJi9rQIg2wn1lBSj5ClkYafaboj): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\storage\\framework/sessions/VQBPQeyUYe0hcPJi9rQIg2wn1lBSj5ClkYafaboj): Failed to open stream: No such file or directory at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:190)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(270): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_put_conten...', 'C:\\\\Users\\\\salom\\\\...', 190)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'file_put_conten...', 'C:\\\\Users\\\\salom\\\\...', 190)
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(190): file_put_contents('C:\\\\Users\\\\salom\\\\...', 'a:3:{s:6:\"_toke...', 2)
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\FileSessionHandler.php(90): Illuminate\\Filesystem\\Filesystem->put('C:\\\\Users\\\\salom\\\\...', 'a:3:{s:6:\"_toke...', true)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(173): Illuminate\\Session\\FileSessionHandler->write('VQBPQeyUYe0hcPJ...', 'a:3:{s:6:\"_toke...')
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(238): Illuminate\\Session\\Store->save()
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(130): Illuminate\\Session\\Middleware\\StartSession->saveSession(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#39 {main}
+"} 
+[2026-07-22 21:51:45] local.ERROR: PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1 {"exception":"[object] (Psy\\Exception\\ParseErrorException(code: 0): PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1 at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\psy\\psysh\\src\\Exception\\ParseErrorException.php:44)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\psy\\psysh\\src\\CodeCleaner.php(657): Psy\\Exception\\ParseErrorException::fromParseError(Object(PhpParser\\Error))
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\psy\\psysh\\src\\CodeCleaner.php(273): Psy\\CodeCleaner->parse('<?php \\\\ = app(A...', false)
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\psy\\psysh\\src\\Shell.php(1399): Psy\\CodeCleaner->clean(Array, false)
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\psy\\psysh\\src\\Shell.php(1506): Psy\\Shell->appendCode('\\\\ = app(App\\\\Ser...', true, false)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\psy\\psysh\\src\\Shell.php(2215): Psy\\Shell->setCode('\\\\ = app(App\\\\Ser...', true)
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\tinker\\src\\Console\\TinkerCommand.php(77): Psy\\Shell->execute('\\\\ = app(App\\\\Ser...')
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Tinker\\Console\\TinkerCommand->handle()
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(153): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Tinker\\Console\\TinkerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 {main}
+"} 
+[2026-07-22 21:52:50] local.ERROR: Error de Gemini API: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+ {"exception":"[object] (Exception(code: 0): Error de Gemini API: {
+  \"error\": {
+    \"code\": 503,
+    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",
+    \"status\": \"UNAVAILABLE\"
+  }
+}
+ at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\Providers\\GeminiProvider.php:51)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\ChatbotService.php(96): App\\Services\\Providers\\GeminiProvider->generarRespuestaChat('Eres el asisten...', Array, 'curva de lactos...')
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(13): App\\Services\\ChatbotService->generarRespuesta('curva de lactos...', Array, Array)
+#2 {main}
+"} 
+[2026-07-22 21:53:43] local.ERROR: Error de Gemini API: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 16.680030408s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.5-flash",
+              "location": "global"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "16s"
+      }
+    ]
+  }
+}
+ {"exception":"[object] (Exception(code: 0): Error de Gemini API: {
+  \"error\": {
+    \"code\": 429,
+    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 16.680030408s.\",
+    \"status\": \"RESOURCE_EXHAUSTED\",
+    \"details\": [
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.Help\",
+        \"links\": [
+          {
+            \"description\": \"Learn more about Gemini API quotas\",
+            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",
+        \"violations\": [
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"model\": \"gemini-2.5-flash\",
+              \"location\": \"global\"
+            },
+            \"quotaValue\": \"20\"
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",
+        \"retryDelay\": \"16s\"
+      }
+    ]
+  }
+}
+ at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\Providers\\GeminiProvider.php:51)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\ChatbotService.php(96): App\\Services\\Providers\\GeminiProvider->generarRespuestaChat('Eres el asisten...', Array, 'curva de lactos...')
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(43): App\\Services\\ChatbotService->generarRespuesta('curva de lactos...', Array, Array)
+#2 {main}
+"} 
+[2026-07-22 22:02:17] local.ERROR: Error de Gemini API (Identificar): {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+ {"exception":"[object] (Exception(code: 0): Error de Gemini API (Identificar): {
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+ at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\Providers\\GeminiProvider.php:90)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(38): App\\Services\\Providers\\GeminiProvider->identificarAnalisis('Eres un asisten...')
+#1 {main}
+"} 
+[2026-07-22 22:03:11] local.ERROR: Error de Gemini API (Identificar): {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+ {"exception":"[object] (Exception(code: 0): Error de Gemini API (Identificar): {
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+ at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\Providers\\GeminiProvider.php:90)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(38): App\\Services\\Providers\\GeminiProvider->identificarAnalisis('Eres un asisten...')
+#1 {main}
+"} 
+[2026-07-22 22:04:17] local.ERROR: Error de Gemini API (Identificar): {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-8b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+ {"exception":"[object] (Exception(code: 0): Error de Gemini API (Identificar): {
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-1.5-flash-8b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+ at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\Providers\\GeminiProvider.php:90)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(38): App\\Services\\Providers\\GeminiProvider->identificarAnalisis('Eres un asisten...')
+#1 {main}
+"} 
+[2026-07-22 22:04:49] local.ERROR: Error de Gemini API (Identificar): {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 10.390266276s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "10s"
+      }
+    ]
+  }
+}
+ {"exception":"[object] (Exception(code: 0): Error de Gemini API (Identificar): {
+  \"error\": {
+    \"code\": 429,
+    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 10.390266276s.\",
+    \"status\": \"RESOURCE_EXHAUSTED\",
+    \"details\": [
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.Help\",
+        \"links\": [
+          {
+            \"description\": \"Learn more about Gemini API quotas\",
+            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",
+        \"violations\": [
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",
+            \"quotaId\": \"GenerateContentInputTokensPerModelPerMinute-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",
+        \"retryDelay\": \"10s\"
+      }
+    ]
+  }
+}
+ at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\Providers\\GeminiProvider.php:90)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(38): App\\Services\\Providers\\GeminiProvider->identificarAnalisis('Eres un asisten...')
+#1 {main}
+"} 
+[2026-07-22 22:05:11] local.ERROR: Error de Gemini API (Identificar): {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+ {"exception":"[object] (Exception(code: 0): Error de Gemini API (Identificar): {
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+ at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\Providers\\GeminiProvider.php:90)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(38): App\\Services\\Providers\\GeminiProvider->identificarAnalisis('Eres un asisten...')
+#1 {main}
+"} 
+[2026-07-22 22:05:32] local.ERROR: Error de Gemini API (Identificar): {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+ {"exception":"[object] (Exception(code: 0): Error de Gemini API (Identificar): {
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+ at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\Providers\\GeminiProvider.php:90)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(38): App\\Services\\Providers\\GeminiProvider->identificarAnalisis('Eres un asisten...')
+#1 {main}
+"} 
+[2026-07-22 22:23:34] local.ERROR: Undefined variable $chatbot {"exception":"[object] (ErrorException(code: 0): Undefined variable $chatbot at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php:46)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(270): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\Users\\\\salom\\\\...', 46)
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\test_ident.php(46): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', 'C:\\\\Users\\\\salom\\\\...', 46)
+#2 {main}
+"} 
+[2026-07-22 23:18:58] local.ERROR: syntax error, unexpected identifier "string", expecting variable {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"string\", expecting variable at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Mail\\AnalisisResumen.php:16)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\salom\\\\...')
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\EmailController.php(22): Composer\\Autoload\\ClassLoader->loadClass('App\\\\Mail\\\\Analis...')
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\EmailController->sendEmail(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendEmail', Array)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\EmailController), 'sendEmail')
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#40 {main}
+"} 
+[2026-07-22 23:20:00] local.ERROR: syntax error, unexpected identifier "string", expecting variable {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"string\", expecting variable at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Mail\\AnalisisResumen.php:16)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\salom\\\\...')
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\EmailController.php(22): Composer\\Autoload\\ClassLoader->loadClass('App\\\\Mail\\\\Analis...')
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\EmailController->sendEmail(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendEmail', Array)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\EmailController), 'sendEmail')
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#40 {main}
+"} 
+[2026-07-22 23:20:19] local.ERROR: syntax error, unexpected identifier "string", expecting variable {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"string\", expecting variable at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Mail\\AnalisisResumen.php:16)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\salom\\\\...')
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\EmailController.php(22): Composer\\Autoload\\ClassLoader->loadClass('App\\\\Mail\\\\Analis...')
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\EmailController->sendEmail(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendEmail', Array)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\EmailController), 'sendEmail')
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#40 {main}
+"} 
+[2026-07-22 23:20:34] local.ERROR: syntax error, unexpected identifier "string", expecting variable {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"string\", expecting variable at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Mail\\AnalisisResumen.php:16)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\salom\\\\...')
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\EmailController.php(22): Composer\\Autoload\\ClassLoader->loadClass('App\\\\Mail\\\\Analis...')
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\EmailController->sendEmail(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendEmail', Array)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\EmailController), 'sendEmail')
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#40 {main}
+"} 
+[2026-07-22 23:25:29] local.ERROR: App\Services\ChatbotService::generarRespuesta(): Argument #1 ($mensaje) must be of type string, null given, called in C:\Users\salom\OneDrive\Escritorio\ChatBotLaboratorio\app\Http\Controllers\ChatController.php on line 52 {"exception":"[object] (TypeError(code: 0): App\\Services\\ChatbotService::generarRespuesta(): Argument #1 ($mensaje) must be of type string, null given, called in C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\ChatController.php on line 52 at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\ChatbotService.php:73)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\ChatController.php(52): App\\Services\\ChatbotService->generarRespuesta(NULL, Array, Array)
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ChatController->chat(Object(Illuminate\\Http\\Request))
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('chat', Array)
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\ChatController), 'chat')
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#39 {main}
+"} 
+[2026-07-22 23:27:28] local.ERROR: View [emails.analisis_resumen] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [emails.analisis_resumen] not found. at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths('emails.analisis...', Array)
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Factory.php(138): Illuminate\\View\\FileViewFinder->find('emails.analisis...')
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(383): Illuminate\\View\\Factory->make('emails.analisis...', Array)
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(360): Illuminate\\Mail\\Mailer->renderView('emails.analisis...', Array)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(272): Illuminate\\Mail\\Mailer->addContent(Object(Illuminate\\Mail\\Message), 'emails.analisis...', NULL, NULL, Array)
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(212): Illuminate\\Mail\\Mailer->send('emails.analisis...', Array, Object(Closure))
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(213): Illuminate\\Mail\\Mailable->withLocale(NULL, Object(Closure))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(309): Illuminate\\Mail\\Mailable->send(Object(Illuminate\\Mail\\Mailer))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(253): Illuminate\\Mail\\Mailer->sendMailable(Object(App\\Mail\\AnalisisResumen))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\PendingMail.php(124): Illuminate\\Mail\\Mailer->send(Object(App\\Mail\\AnalisisResumen))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\EmailController.php(24): Illuminate\\Mail\\PendingMail->send(Object(App\\Mail\\AnalisisResumen))
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\EmailController->sendEmail(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendEmail', Array)
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\EmailController), 'sendEmail')
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#50 {main}
+"} 
+[2026-07-22 23:28:47] local.ERROR: App\Services\ChatbotService::generarRespuesta(): Argument #1 ($mensaje) must be of type string, null given, called in C:\Users\salom\OneDrive\Escritorio\ChatBotLaboratorio\app\Http\Controllers\ChatController.php on line 52 {"exception":"[object] (TypeError(code: 0): App\\Services\\ChatbotService::generarRespuesta(): Argument #1 ($mensaje) must be of type string, null given, called in C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\ChatController.php on line 52 at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\services\\ChatbotService.php:73)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\ChatController.php(52): App\\Services\\ChatbotService->generarRespuesta(NULL, Array, Array, '/9j/4AAQSkZJRgA...', 'image/jpeg')
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ChatController->chat(Object(Illuminate\\Http\\Request))
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('chat', Array)
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\ChatController), 'chat')
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#39 {main}
+"} 
+[2026-07-22 23:37:49] local.ERROR: View [emails.analisis_resumen] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [emails.analisis_resumen] not found. at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
+[stacktrace]
+#0 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths('emails.analisis...', Array)
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Factory.php(138): Illuminate\\View\\FileViewFinder->find('emails.analisis...')
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(383): Illuminate\\View\\Factory->make('emails.analisis...', Array)
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(360): Illuminate\\Mail\\Mailer->renderView('emails.analisis...', Array)
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(272): Illuminate\\Mail\\Mailer->addContent(Object(Illuminate\\Mail\\Message), 'emails.analisis...', NULL, NULL, Array)
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(212): Illuminate\\Mail\\Mailer->send('emails.analisis...', Array, Object(Closure))
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(213): Illuminate\\Mail\\Mailable->withLocale(NULL, Object(Closure))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(309): Illuminate\\Mail\\Mailable->send(Object(Illuminate\\Mail\\Mailer))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(253): Illuminate\\Mail\\Mailer->sendMailable(Object(App\\Mail\\AnalisisResumen))
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\PendingMail.php(124): Illuminate\\Mail\\Mailer->send(Object(App\\Mail\\AnalisisResumen))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\EmailController.php(24): Illuminate\\Mail\\PendingMail->send(Object(App\\Mail\\AnalisisResumen))
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\EmailController->sendEmail(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendEmail', Array)
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\EmailController), 'sendEmail')
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#50 {main}
+"} 
+[2026-07-22 23:39:22] local.ERROR: Connection could not be established with host "smtp.hospital.uncuyo.edu.ar:587": stream_socket_client(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  {"exception":"[object] (Symfony\\Component\\Mailer\\Exception\\TransportException(code: 0): Connection could not be established with host \"smtp.hospital.uncuyo.edu.ar:587\": stream_socket_client(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\Stream\\SocketStream.php:154)
+[stacktrace]
+#0 [internal function]: Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\SocketStream->Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\{closure}(2, 'stream_socket_c...', 'C:\\\\Users\\\\salom\\\\...', 157)
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\Stream\\SocketStream.php(157): stream_socket_client('smtp.hospital.u...', 0, '', 60, 4, Resource id #584)
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(251): Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\SocketStream->initialize()
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(194): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->start()
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\AbstractTransport.php(69): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doSend(Object(Symfony\\Component\\Mailer\\SentMessage))
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(136): Symfony\\Component\\Mailer\\Transport\\AbstractTransport->send(Object(Symfony\\Component\\Mailer\\SentMessage), Object(Symfony\\Component\\Mailer\\DelayedEnvelope))
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(523): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->send(Object(Symfony\\Component\\Mime\\Email), Object(Symfony\\Component\\Mailer\\DelayedEnvelope))
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(287): Illuminate\\Mail\\Mailer->sendSymfonyMessage(Object(Symfony\\Component\\Mime\\Email))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(212): Illuminate\\Mail\\Mailer->send('emails.analisis...', Array, Object(Closure))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(213): Illuminate\\Mail\\Mailable->withLocale(NULL, Object(Closure))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(309): Illuminate\\Mail\\Mailable->send(Object(Illuminate\\Mail\\Mailer))
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(253): Illuminate\\Mail\\Mailer->sendMailable(Object(App\\Mail\\AnalisisResumen))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\PendingMail.php(124): Illuminate\\Mail\\Mailer->send(Object(App\\Mail\\AnalisisResumen))
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\EmailController.php(24): Illuminate\\Mail\\PendingMail->send(Object(App\\Mail\\AnalisisResumen))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\EmailController->sendEmail(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendEmail', Array)
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\EmailController), 'sendEmail')
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#50 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#53 {main}
+"} 
+[2026-07-23 00:00:17] local.ERROR: Connection could not be established with host "smtp.hospital.uncuyo.edu.ar:587": stream_socket_client(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  {"exception":"[object] (Symfony\\Component\\Mailer\\Exception\\TransportException(code: 0): Connection could not be established with host \"smtp.hospital.uncuyo.edu.ar:587\": stream_socket_client(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  at C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\Stream\\SocketStream.php:154)
+[stacktrace]
+#0 [internal function]: Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\SocketStream->Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\{closure}(2, 'stream_socket_c...', 'C:\\\\Users\\\\salom\\\\...', 157)
+#1 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\Stream\\SocketStream.php(157): stream_socket_client('smtp.hospital.u...', 0, '', 60, 4, Resource id #580)
+#2 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(251): Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\SocketStream->initialize()
+#3 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(194): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->start()
+#4 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\AbstractTransport.php(69): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doSend(Object(Symfony\\Component\\Mailer\\SentMessage))
+#5 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(136): Symfony\\Component\\Mailer\\Transport\\AbstractTransport->send(Object(Symfony\\Component\\Mailer\\SentMessage), Object(Symfony\\Component\\Mailer\\DelayedEnvelope))
+#6 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(523): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->send(Object(Symfony\\Component\\Mime\\Email), Object(Symfony\\Component\\Mailer\\DelayedEnvelope))
+#7 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(287): Illuminate\\Mail\\Mailer->sendSymfonyMessage(Object(Symfony\\Component\\Mime\\Email))
+#8 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(212): Illuminate\\Mail\\Mailer->send('emails.analisis...', Array, Object(Closure))
+#9 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#10 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(213): Illuminate\\Mail\\Mailable->withLocale(NULL, Object(Closure))
+#11 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(309): Illuminate\\Mail\\Mailable->send(Object(Illuminate\\Mail\\Mailer))
+#12 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(253): Illuminate\\Mail\\Mailer->sendMailable(Object(App\\Mail\\AnalisisResumen))
+#13 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\PendingMail.php(124): Illuminate\\Mail\\Mailer->send(Object(App\\Mail\\AnalisisResumen))
+#14 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\app\\Http\\Controllers\\EmailController.php(24): Illuminate\\Mail\\PendingMail->send(Object(App\\Mail\\AnalisisResumen))
+#15 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\EmailController->sendEmail(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendEmail', Array)
+#17 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\EmailController), 'sendEmail')
+#18 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#19 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#20 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(102): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#25 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#26 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#27 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(799): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#31 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#50 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\salom\\OneDrive\\Escritorio\\ChatBotLaboratorio\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\salom\\\\...')
+#53 {main}
+"} 

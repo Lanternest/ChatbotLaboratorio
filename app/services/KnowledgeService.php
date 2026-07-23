@@ -112,6 +112,8 @@ class KnowledgeService
 
         $partes = [
             "=== {$a['nombre_oficial']} ===",
+            !empty($a['alias']) ? "También conocido como: " . implode(', ', $a['alias']) : '',
+            !empty($a['palabras_clave']) ? "Términos relacionados: " . implode(', ', $a['palabras_clave']) : '',
             "Horario de extracción: " . ($a['horario_extraccion'] ?? 'Consultar con el laboratorio.'),
             $diasTexto,
             "Tipo de muestra: " . ($a['tipo_muestra'] ?? 'Consultar con el laboratorio.'),
@@ -134,5 +136,30 @@ class KnowledgeService
     public function obtenerContacto(): array
     {
         return $this->cargarBase()['contacto'] ?? [];
+    }
+
+    /**
+     * Devuelve el contexto en texto de múltiples análisis,
+     * unificado para inyectarlo en el prompt del chatbot.
+     */
+    public function obtenerContextosAnalisis(array $analisisIds): ?string
+    {
+        if (empty($analisisIds)) {
+            return null;
+        }
+
+        $contextos = [];
+        foreach ($analisisIds as $id) {
+            $ctx = $this->obtenerContextoAnalisis($id);
+            if ($ctx) {
+                $contextos[] = $ctx;
+            }
+        }
+
+        if (empty($contextos)) {
+            return null;
+        }
+
+        return implode("\n\n--------------------------------\n\n", $contextos);
     }
 }

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente HU - UNCuyo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chat-container {
+            width: 400px;
+            height: 700px;
+            background: #f9f9fb;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+        .chat-header {
+            background-color: #1a4073;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .chat-header .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .chat-header h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .chat-header p {
+            margin: 0;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        .chat-header .icon {
+            background-color: #2b8ee3;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            position: relative;
+        }
+        .chat-header .icon::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            border: 2px solid #1a4073;
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .chat-body {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .message {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        .message.bot {
+            align-self: flex-start;
+        }
+        .message.bot .bubble {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            color: #333;
+            border-radius: 15px 15px 15px 0;
+            padding: 12px 15px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .message.user {
+            align-self: flex-end;
+        }
+        .message.user .bubble {
+            background-color: #1a4073;
+            color: white;
+            border-radius: 15px 15px 0 15px;
+            padding: 12px 15px;
+        }
+        .message .time {
+            font-size: 10px;
+            color: #999;
+            margin-top: 5px;
+            align-self: flex-start;
+        }
+        .message.user .time {
+            align-self: flex-end;
+        }
+        
+        /* Quick Replies */
+        .quick-replies {
+            padding: 10px 15px;
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            border-top: 1px solid #eee;
+            background: white;
+        }
+        .quick-replies::-webkit-scrollbar {
+            display: none;
+        }
+        .quick-reply-btn {
+            background: white;
+            border: 1px solid #b3c3d6;
+            color: #1a4073;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+        .quick-reply-btn:hover {
+            background: #f0f4f8;
+        }
+
+        .chat-footer {
+            padding: 15px;
+            background-color: white;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .input-group {
+            flex: 1;
+            background-color: #f2f4f7;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            padding: 5px 15px;
+        }
+        .input-group input[type="text"] {
+            flex: 1;
+            border: none;
+            background: transparent;
+            padding: 10px 0;
+            outline: none;
+            font-size: 14px;
+        }
+        .icon-btn {
+            background: none;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .send-btn {
+            background-color: #9caabf;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+        .send-btn.active {
+            background-color: #1a4073;
+        }
+        .disclaimer {
+            text-align: center;
+            font-size: 10px;
+            color: #999;
+            padding-bottom: 10px;
+            background: white;
+        }
+        
+        #file-input {
+            display: none;
+        }
+        .image-preview {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">
+        <div class="title">
+            <div class="icon">+</div>
+            <div>
+                <h3>Asistente HU</h3>
+                <p>Hospital Universitario · UNCUYO</p>
+            </div>
+        </div>
+        <button class="close-btn">×</button>
+    </div>
+
+    <div class="chat-body" id="chat-body">
+        <div class="message bot">
+            <div class="bubble">Hola, soy el asistente virtual del Hospital Universitario. ¿En qué puedo ayudarte? Si tienes una orden médica, puedes enviarme una foto pulsando el botón del clip 📎.</div>
+            <div class="time">Ahora</div>
+        </div>
+    </div>
+
+    <div class="quick-replies">
+
+        <button class="quick-reply-btn" onclick="sendMsg('Urgencias')">Urgencias</button>
+        <button class="quick-reply-btn" onclick="sendMsg('Resultados')">Resultados</button>
+        <button class="quick-reply-btn" onclick="sendMsg('Horarios')">Horarios</button>
+    </div>
+
+    <div class="chat-footer">
+        <div class="input-group">
+            <input type="file" id="file-input" accept="image/*">
+            <button class="icon-btn" onclick="document.getElementById('file-input').click()">📎</button>
+            <input type="text" id="chat-input" placeholder="Escribe tu consulta...">
+        </div>
+        <button class="send-btn" id="send-btn">➔</button>
+    </div>
+    <img id="image-preview" class="image-preview" style="display:none; max-height: 100px; margin: 0 15px 10px 15px; border-radius: 8px;">
+    
+    <div class="disclaimer">
+        No reemplaza la atención médica. Emergencias: llame al 107.
+    </div>
+</div>
+
+<script>
+    let historial = [];
+    let analisisIdentificados = [];
+    let selectedFile = null;
+
+    const chatBody = document.getElementById('chat-body');
+    const input = document.getElementById('chat-input');
+    const sendBtn = document.getElementById('send-btn');
+    const fileInput = document.getElementById('file-input');
+    const imagePreview = document.getElementById('image-preview');
+
+    input.addEventListener('input', () => {
+        if(input.value.trim().length > 0 || selectedFile) {
+            sendBtn.classList.add('active');
+        } else {
+            sendBtn.classList.remove('active');
+        }
+    });
+
+    fileInput.addEventListener('change', (e) => {
+        if(e.target.files && e.target.files[0]) {
+            selectedFile = e.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(selectedFile);
+            sendBtn.classList.add('active');
+        }
+    });
+
+    input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            sendMsg();
+        }
+    });
+    
+    sendBtn.addEventListener('click', () => sendMsg());
+
+    function appendMessage(text, isUser, imageUrl = null) {
+        const div = document.createElement('div');
+        div.className = `message ${isUser ? 'user' : 'bot'}`;
+        
+        let content = '';
+        if (imageUrl) {
+            content += `<img src="${imageUrl}" style="max-width: 100%; border-radius: 8px; margin-bottom: 5px;">`;
+        }
+        if (text) {
+            // Convertir Markdown básico a HTML
+            let formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Negrita
+            formattedText = formattedText.replace(/\*(.*?)\*/g, '<em>$1</em>'); // Cursiva (opcional)
+            content += formattedText.replace(/\n/g, '<br>');
+        }
+        
+        div.innerHTML = `
+            <div class="bubble">${content}</div>
+            <div class="time">Ahora</div>
+        `;
+        chatBody.appendChild(div);
+        chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    async function sendMsg(text = null) {
+        const message = text || input.value.trim();
+        
+        if (!message && !selectedFile) return;
+
+        let previewUrl = null;
+        if (selectedFile) {
+            previewUrl = imagePreview.src;
+        }
+
+        appendMessage(message, true, previewUrl);
+        
+        // Preparar FormData
+        const formData = new FormData();
+        formData.append('mensaje', message);
+        if (selectedFile) {
+            formData.append('imagen', selectedFile);
+        }
+        
+        // Agregar historial y analisis
+        historial.forEach((h, index) => {
+            formData.append(`historial[${index}][role]`, h.role);
+            formData.append(`historial[${index}][content]`, h.content);
+        });
+        
+        analisisIdentificados.forEach((id, index) => {
+            formData.append(`analisis_identificado[${index}]`, id);
+        });
+
+        // Limpiar inputs
+        input.value = '';
+        selectedFile = null;
+        imagePreview.style.display = 'none';
+        imagePreview.src = '';
+        sendBtn.classList.remove('active');
+        
+        // Agregamos mensaje del usuario al historial local
+        historial.push({ role: 'user', content: message || "[Imagen enviada]" });
+
+        // Loading
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'message bot loading';
+        loadingDiv.innerHTML = `<div class="bubble">Escribiendo...</div>`;
+        chatBody.appendChild(loadingDiv);
+        chatBody.scrollTop = chatBody.scrollHeight;
+
+        try {
+            const response = await fetch('http://127.0.0.1:8000/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: formData
+            });
+            
+            const data = await response.json();
+            
+            // Remover loading
+            chatBody.removeChild(loadingDiv);
+
+            if (data.respuesta) {
+                appendMessage(data.respuesta, false);
+                historial.push({ role: 'assistant', content: data.respuesta });
+            }
+            
+            if (data.analisis_identificado) {
+                analisisIdentificados = data.analisis_identificado;
+            }
+            
+            if (data.listo_para_enviar && data.resumen) {
+                window.resumenPendiente = data.resumen;
+                const formId = Date.now();
+                const div = document.createElement('div');
+                div.className = 'message bot';
+                div.id = 'email-container-' + formId;
+                div.innerHTML = `
+                    <div class="bubble">
+                        Por favor, ingresá tu correo electrónico para enviarte el resumen:
+                        <div style="margin-top: 10px; display: flex; gap: 5px;">
+                            <input type="email" id="email-input-${formId}" placeholder="tu@email.com" style="flex:1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; outline: none;">
+                            <button onclick="enviarResumenCorreo(${formId})" style="background: #1a4073; color: white; border: none; border-radius: 4px; padding: 8px 12px; cursor: pointer;">Enviar</button>
+                        </div>
+                        <div id="email-status-${formId}" style="font-size: 11px; margin-top: 5px;"></div>
+                    </div>
+                    <div class="time">Ahora</div>
+                `;
+                chatBody.appendChild(div);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+            
+        } catch (error) {
+            chatBody.removeChild(loadingDiv);
+            appendMessage("Ocurrió un error al conectar con el servidor. Verifica que Laravel esté corriendo en el puerto 8000.", false);
+        }
+    }
+
+    async function enviarResumenCorreo(formId) {
+        const inputEl = document.getElementById('email-input-' + formId);
+        const statusEl = document.getElementById('email-status-' + formId);
+        const btnEl = inputEl.nextElementSibling;
+        const email = inputEl.value.trim();
+        
+        if (!email || !email.includes('@')) {
+            statusEl.textContent = 'Por favor, ingresá un correo válido.';
+            statusEl.style.color = 'red';
+            return;
+        }
+        
+        statusEl.textContent = 'Enviando...';
+        statusEl.style.color = '#666';
+        inputEl.disabled = true;
+        btnEl.disabled = true;
+        
+        try {
+            const formData = new FormData();
+            formData.append('email_paciente', email);
+            formData.append('resumen', window.resumenPendiente);
+            formData.append('analisis_nombre', analisisIdentificados.join(', ') || 'Análisis clínico');
+            
+            const response = await fetch('http://127.0.0.1:8000/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: formData
+            });
+            
+            const data = await response.json();
+            if (data.enviado) {
+                const container = document.getElementById('email-container-' + formId);
+                if (container) {
+                    container.innerHTML = '<div style="color: #10b981; font-weight: bold; text-align: center; padding: 10px;">¡Resumen enviado con éxito!<br><span style="color: #d97706; font-size: 0.85em; font-weight: normal; margin-top: 5px; display: inline-block;">(Por favor, revisa tu carpeta de <b>Spam</b> o <b>Correo no deseado</b> si no lo ves en la bandeja principal)</span></div>';
+                }
+            } else {
+                statusEl.textContent = 'Error: ' + (data.mensaje || data.message || 'Error desconocido al enviar.');
+                statusEl.style.color = 'red';
+                inputEl.disabled = false;
+                btnEl.disabled = false;
+            }
+        } catch (e) {
+            statusEl.textContent = 'Error de conexión al enviar el correo.';
+            statusEl.style.color = 'red';
+            inputEl.disabled = false;
+            btnEl.disabled = false;
+        }
+    }
+</script>
+</body>
+</html>
